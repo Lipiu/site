@@ -53,13 +53,25 @@ nav ul li a:hover::after{
     width: 100%;
 }
 
+.about-site{
+    padding: 10px 0;
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+
 .header-text{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70vh;
+    height: 30vh;
     margin: 0;
     font-size: 30px;
+}
+
+.container p{
+    font-size: large;
+    color: #ababab;
 }
 
 .header-text span{
@@ -69,6 +81,7 @@ nav ul li a:hover::after{
 /*------------------------- About section -------------------------*/
 #about{
     padding: 300px 0;
+    font-size: large;
     color: #ababab;
 }
 
@@ -124,7 +137,7 @@ nav ul li a:hover::after{
 
 .tab-contents ul li span{
     color: #b54769;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 .tab-contents{
@@ -138,7 +151,7 @@ nav ul li a:hover::after{
 /*------------------------- My projects section -------------------------*/
 
 #projects{
-    padding: 300px 0;
+    padding: 250px 0;
 }
 
 .projects-list{
@@ -182,6 +195,10 @@ nav ul li a:hover::after{
 }
 
 /*------------------------- Contact section -------------------------*/
+#contact{
+    padding: 100px 0;
+}
+
 .contact-info{
     flex-basis: 50%;
 }

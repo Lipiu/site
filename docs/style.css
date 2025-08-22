@@ -69,6 +69,26 @@ nav ul li a:hover::after{
     font-size: 30px;
 }
 
+.website-title{
+    flex: 1;                
+    display: flex;          
+    align-items: center;
+    justify-content: center; 
+    gap: 30px;              
+    margin: 60px 0;
+    padding: 10px 0;
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.website-title::before, .website-title::after{
+    content: '';
+    height: 2px;
+    background: #ff004f;
+    flex: 1 1 0;
+}
+
 .container p{
     font-size: large;
     color: #ababab;
@@ -77,6 +97,8 @@ nav ul li a:hover::after{
 .header-text span{
     color: #ff004f;
 }
+
+
 
 /*------------------------- About section -------------------------*/
 #about{
@@ -92,14 +114,34 @@ nav ul li a:hover::after{
 }
 
 .about-col-1{
-    flex-basis: 60%;
+    flex-basis: 100%;
 }
 
-.sub-title{
+.sub-title {
+    position: relative;
+    text-align: center;
     padding: 10px 0;
+    margin: 60px 0;
     font-size: 60px;
     font-weight: 600;
     color: #fff;
+}
+
+.sub-title::before, .sub-title::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 40%;
+    height: 2px;
+    background: #ff004f;
+}
+
+.sub-title::before{
+    left: 0;
+}
+
+.sub-title::after{
+    right: 0;
 }
 
 .tab-titles{
@@ -147,6 +189,10 @@ nav ul li a:hover::after{
 .tab-contents.active-tab{
     display: block;
 }
+
+/* infinite animation loop */
+
+
 
 /*------------------------- My projects section -------------------------*/
 
@@ -197,6 +243,17 @@ nav ul li a:hover::after{
 /*------------------------- Contact section -------------------------*/
 #contact{
     padding: 100px 0;
+}
+
+#contact .sub-title{
+    text-align: left;
+}
+
+.sub-title-contact{
+    padding: 10px 0;
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
 }
 
 .contact-info{

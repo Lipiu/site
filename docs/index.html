@@ -77,23 +77,29 @@
         </div>
     </div>
 
-    <div class="scroller" data-speed="fast">
-        <ul>
-            <li>
-                <img src="https://img.shields.io/badge/C-%2300599C.svg?style=for-the-badge&amp;logo=c&amp;logoColor=white" alt="C">
-                <img src="https://img.shields.io/badge/C++-%2300599C.svg?style=for-the-badge&amp;logo=c%2B%2B&amp;logoColor=white" alt="C++">
-                <img src="https://img.shields.io/badge/C%23-%23239120.svg?style=for-the-badge&amp;logo=csharp&amp;logoColor=white" alt="C#">
-                <img src="https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&amp;logo=.net&amp;logoColor=white" alt=".NET">
-                <img src="https://img.shields.io/badge/Java-%23ED8B00.svg?style=for-the-badge&amp;logo=openjdk&amp;logoColor=white" alt="Java">
-                <img src="https://img.shields.io/badge/Python-3670A0?style=for-the-badge&amp;logo=python&amp;logoColor=ffdd54" alt="Python">
+    <div class="moving-icons">
+        <div class="scrolling-wrapper">
+            <div class="scrolling-content">
+                <img src="https://img.shields.io/badge/C-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white" alt="C">
+                <img src="https://img.shields.io/badge/C++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++">
+                <img src="https://img.shields.io/badge/C%23-%23239120.svg?style=for-the-badge&logo=csharp&logoColor=white" alt="C#">
+                <img src="https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white" alt=".NET">
+                <img src="https://img.shields.io/badge/Java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java">
+                <img src="https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" alt="Python">
+                <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" alt="JavaScript">
+                <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
+                <img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
                 <img src="https://img.shields.io/badge/Oracle SQL-F80000?style=for-the-badge&logo=oracle&logoColor=white" alt="Oracle SQL">
-                <img src="https://img.shields.io/badge/Oracle PL/SQL-F80000?style=for-the-badge&logo=oracle&logoColor=white" alt="Oracle PL/SQL">
-                <img src="https://img.shields.io/badge/SQLite-0000FF.svg?style=for-the-badge&amp;logo=sqlite&amp;logoColor=white" alt="SQLite">
-                <img src="https://img.shields.io/badge/Postgres-%23316192.svg?style=for-the-badge&amp;logo=postgresql&amp;logoColor=white" alt="Postgres">
-                <img src="https://img.shields.io/badge/Git-%23F05033.svg?style=for-the-badge&amp;logo=git&amp;logoColor=white" alt="Git">
-            </li>
-        </ul>
+                <img src="https://img.shields.io/badge/pl/sql-F80000?style=for-the-badge&logo=oracle&logoColor=white" alt="Oracle PL/SQL">
+                <img src="https://img.shields.io/badge/sqlite-0000FF.svg?style=for-the-badge&logo=sqlite&logoColor=white" alt="SQLite">
+                <img src="https://img.shields.io/badge/Postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white" alt="Postgres">
+                <img src="https://img.shields.io/badge/Git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white" alt="Git">
+                <img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
+                <img src="https://img.shields.io/badge/Linux-ff004f.svg?style=for-the-badge&logo=linux&logoColor=white" alt="Linux">
+            </div>
+        </div>
     </div>
+
 </div>
 
 <!-- ------------------------- My projects section ------------------------- -->
@@ -156,6 +162,18 @@
 </div>
 
 <script src="main.js"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const wrapper = document.querySelector(".scrolling-wrapper");
+    const content = document.querySelector(".scrolling-content");
+
+    // Clone content and add spacing at the seam
+    const clone = content.cloneNode(true);
+    clone.style.marginLeft = "1.5rem"; // ensures gap between last & first
+    wrapper.appendChild(clone);
+  });
+</script>
 
 </body>
 </html>

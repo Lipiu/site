@@ -200,7 +200,7 @@ nav ul li a:hover::after{
 .scrolling-wrapper {
   display: flex;
   width: max-content;
-  animation: scroll 25s linear infinite;
+  animation: scroll 20s linear infinite;
 }
 
 .scrolling-content {
@@ -217,11 +217,11 @@ nav ul li a:hover::after{
   from { 
     transform: translateX(0);
   }
-
   to { 
     transform: translateX(-50%); 
-  }
 }
+}
+
 
 
 

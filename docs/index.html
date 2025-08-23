@@ -163,17 +163,5 @@
 
 <script src="main.js"></script>
 
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const wrapper = document.querySelector(".scrolling-wrapper");
-    const content = document.querySelector(".scrolling-content");
-
-    // Clone content and add spacing at the seam
-    const clone = content.cloneNode(true);
-    clone.style.marginLeft = "1.5rem"; // ensures gap between last & first
-    wrapper.appendChild(clone);
-  });
-</script>
-
 </body>
 </html>

@@ -191,7 +191,7 @@ nav ul li a:hover::after{
 }
 
 /* infinite animation loop */
-.moving-icons {
+/* .moving-icons {
   overflow: hidden;
   width: 100%;
   position: relative;
@@ -219,9 +219,9 @@ nav ul li a:hover::after{
   }
   to { 
     transform: translateX(-50%); 
+ } 
 }
-}
-
+*/
 
 
 

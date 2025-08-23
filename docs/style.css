@@ -223,6 +223,71 @@ nav ul li a:hover::after{
 }
 */
 
+.level-info{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.grid{
+    position: relative;
+    padding-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 5rem;
+    justify-content: center;
+    /* width: 100%; */
+}
+
+.grid-card{
+    position: relative;
+    border: 2px, solid #ff004f;
+    border-radius: 1rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: left;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.grid-card:first-child::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -9999px;
+    width: 9999px;
+    height: 2px;
+    background: #ff004f;
+    z-index: -1;
+}
+
+.grid-card:last-child::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -9999px;
+    width: 9999px;
+    height: 2px;
+    background: #ff004f;
+    z-index: -1;
+}
+
+.grid-card:hover{
+    transform: scale(1.02);
+    background-color: black;
+    color: white;
+}
+
+.grid-card span{
+    font-size: 1.5rem;
+    font-weight: 500;
+    background: linear-gradient(to right, #ff004f);
+    background-clip: text;
+    color: transparent;
+}
+
 
 
 
@@ -338,7 +403,4 @@ nav ul li a:hover::after{
     background: #ff004f;
 }
 
-/* css for small screen */
-
-
-/* click to scroll */
+/* css to resize the site */

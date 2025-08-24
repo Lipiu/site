@@ -29,7 +29,7 @@
             </div>
 
             <!-- Short description -->
-            <h1 class="about-site">Site description</h1>
+            <!-- <h1 class="about-site">Site description</h1>
             <p>
                 This site is my personal resume and portfolio. <br>
                 Here, you’ll find information about me and my projects. <br>
@@ -37,8 +37,12 @@
                 You’ll also see details on my experience and education. <br>
                 I share the skills I continue to develop and refine. <br>
                 Feel free to explore and reach out to connect with me.
-            </p>
+            </p> -->
         </div>
+        <div class="sub-title-animation">
+            <h1>I'm a <span class="auto-type"></span></h1>
+        </div>
+
     </header>
 
     <!-- ========================= ABOUT SECTION ========================= -->
@@ -178,6 +182,17 @@
 
     <!-- ========================= SCRIPTS ========================= -->
     <script src="main.js"></script>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script>
+        var typed = new Typed(".auto-type", {
+        strings: ["Computer science student"],
+        typeSpeed: 70,
+        backSpeed: 70,
+        loop: false
+    })
+    </script>
 
 </body>
 </html>

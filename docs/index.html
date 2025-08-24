@@ -4,188 +4,180 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Website</title>
-    <link rel="stylesheet", href="style.css">
+
+    <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/b25ec195d0.js" crossorigin="anonymous"></script>
 </head>
 <body>
-   <div id="header">
-    <div class="container">
-        <nav>
-            <!-- <img src="../images/web_image.png" class="logo"> -->
-            <ul>
-                <li><a href="#header">Home</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li> <a href = "#projects">My Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="header-text">
-            <h1 class="website-title">Welcome to my website, I'm <span>Liviu</span>!</h1>
+
+    <!-- ========================= HEADER SECTION ========================= -->
+    <header id="header">
+        <div class="container">
+            <!-- Navigation -->
+            <nav>
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">My Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Intro text -->
+            <div class="header-text">
+                <h1 class="website-title">Welcome to my website, I'm <span>Liviu</span>!</h1>
+            </div>
+
+            <!-- Short description -->
+            <h1 class="about-site">Site description</h1>
+            <p>
+                This site is my personal resume and portfolio. <br>
+                Here, you’ll find information about me and my projects. <br>
+                It showcases my professional journey and achievements. <br>
+                You’ll also see details on my experience and education. <br>
+                I share the skills I continue to develop and refine. <br>
+                Feel free to explore and reach out to connect with me.
+            </p>
         </div>
-        <h1 class="about-site">Site description</h1>
-        <p>
-            This site is my personal resume and portfolio. <br>
-            Here, you’ll find information about me and my projects. <br>
-            It showcases my professional journey and achievements. <br>
-            You’ll also see details on my experience and education. <br>
-            I share the skills I continue to develop and refine. <br>
-            Feel free to explore and reach out to connect with me.
+    </header>
 
-        </p>
-    </div>
-   </div>
+    <!-- ========================= ABOUT SECTION ========================= -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        Hello, my name is Liviu — a motivated Economic Informatics student with a passion for software and hardware.<br>
+                        I enjoy exploring new technologies, solving complex challenges, and creating innovative, impactful solutions.<br>
+                        With strong English skills, adaptability, and a continuous drive to learn, I embrace challenges as opportunities.<br>
+                        I’m eager to apply my knowledge to real-world projects, collaborate with others, and grow as a developer.<br>
+                        My goal is to advance rapidly, build meaningful software, and make a lasting impact in the tech world.
+                    </p>
 
-<!-- ------------------------- About section ------------------------- -->
-<div id="about">
-    <div class="container">
-        <div class="row">
-            <div class="about-col-1">
-                <h1 class="sub-title">About Me</h1>
-                <p>
-                    Hello, my name is Liviu — a motivated Economic Informatics student with a passion for programming.<br>
-                    I enjoy exploring new technologies, solving complex challenges, and creating innovative, impactful solutions.<br>
-                    With strong English skills, adaptability, and a continuous drive to learn, I embrace challenges as opportunities.<br>
-                    I’m eager to apply my knowledge to real-world projects, collaborate with others, and grow as a developer.<br>
-                    My goal is to advance rapidly, build meaningful software, and make a lasting impact in the tech world.
-                </p>
-                <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                    <p class="tab-links" onclick="opentab('education')">Education</p>
-                </div>
-                <div class="tab-contents active-tab" id="skills">
-                    <ul>
-                        <li><span>Programming languages</span><br>C/C++, C#, Java, Python, JavaScript</li>
-                        <li><span>Databases</span><br>Oracle SQL, PL/SQL, SQLite, PostgreSQL (pgAdmin 4)</li>
-                        <li><span>Version Control</span><br>Git</li>
-                        <li><span>Agile Frameworks</span><br>Kanban, Scrum</li>
-                    </ul>
-                </div>
+                    <!-- Tabs -->
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
 
-                <div class="tab-contents" id="experience">
-                    <ul>
-                        <li><span>April 2025 - May 2025</span><br>Intern at SoftServe</li>
-                    </ul>
-                </div>
-                
-                <div class="tab-contents" id="education">
-                    <ul>
-                        <li><span>2023-2026 - student at ASE Bucharest</span><br>Bachelor's Degree in Economic Informatics</li>
-                    </ul>
+                    <!-- Skills -->
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming languages</span><br>C/C++, C#, Java, Python, JavaScript</li>
+                            <li><span>Databases</span><br>Oracle SQL, PL/SQL, SQLite, PostgreSQL (pgAdmin 4)</li>
+                            <li><span>Version Control</span><br>Git</li>
+                            <li><span>Agile Frameworks</span><br>Kanban, Scrum</li>
+                            <li><span>Soft Skills</span><br>Collaborative, Effective communication, Teamwork, Adaptability</li>
+                        </ul>
+                    </div>
+
+                    <!-- Experience -->
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>April 2025 - May 2025</span><br>Intern at SoftServe</li>
+                            <li><span>June 6th</span><br>IT Fest Hackathon</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Education -->
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023-2026 - student at ASE Bucharest</span><br>Bachelor's Degree in Economic Informatics</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <section id="programming-level-info" class="programming-level-info">
-        <div class="level-info">
-            <div class="grid">
-                <div class="grid-card">
-                    <span>Beginner</span>
-                    <p>JavaScript, HTML, CSS, PostgreSQL, SQLite</p>
+        <!-- Programming levels -->
+        <section id="programming-level-info" class="programming-level-info">
+            <div class="level-info">
+                <div class="grid">
+                    <div class="grid-card">
+                        <span>Beginner</span>
+                        <p>JavaScript, HTML, CSS, PostgreSQL, SQLite</p>
+                    </div>
+                    <div class="grid-card">
+                        <span>Intermediate</span>
+                        <p>Python, C, Java, Oracle PL/SQL</p>
+                    </div>
+                    <div class="grid-card">
+                        <span>Advanced</span>
+                        <p>C++, C#</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- ========================= PROJECTS SECTION ========================= -->
+    <section id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="projects-list">
+
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>SQLite Engine in C++</h2>
+                    <p>A lightweight, limited version of the SQLite database engine implemented in C++. 
+                        Currently under development, this project demonstrates core database management concepts 
+                        such as query parsing, execution, and storage handling.</p>
+                    <a href="https://github.com/Lipiu/My-SQLite-Engine">Learn more</a>
                 </div>
 
-                <div class="grid-card">
-                    <span>Intermediate</span>
-                    <p>Python, C, Java, Oracle PL/SQL</p>
+                <div>
+                    <i class="fa-solid fa-pizza-slice"></i>
+                    <h2>Pizza delivery form app</h2>
+                    <p>Developed a C# Windows Forms application that lets users select, customize, and order pizzas through an intuitive interface. 
+                        Features include JSON and XML serialization and SQLite database integration.</p>
+                    <a href="https://github.com/Lipiu/PizzaDeliveryApp">Learn more</a>
                 </div>
 
-                <div class="grid-card">
-                    <span>Advanced</span>
-                    <p>C++, C#</p>
+                <div>
+                    <i class="fa-solid fa-dumbbell"></i>
+                    <h2>Gym management system</h2>
+                    <p>A gym management system designed with Oracle PL/SQL, featuring database-driven solutions for handling 
+                        member information, subscriptions, and activity tracking through efficient queries, stored procedures, and triggers.</p>
+                    <a href="https://github.com/Lipiu/gym-database-system">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-book"></i>
+                    <h2>Book store ETL pipeline</h2>
+                    <p>Developed an ETL pipeline for a bookstore during my internship at SoftServe, using Python, Git, and pgAdmin 4. 
+                        It extracts data from CSVs, validates it through a raw-staging-trusted workflow, and transforms it for analysis.</p>
+                    <a href="https://github.com/Lipiu/proiect-practica">Learn more</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================= CONTACT SECTION ========================= -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-info">
+                    <h1 class="sub-title-contact">Contact me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> rosu.liviumihai@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +40767691019</p>
+
+                    <!-- Socials -->
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/liviu-mihai-rosu/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Lipiu"><i class="fa-brands fa-github"></i></a>
+                    </div>
+
+                    <a href="cv.pdf" download class="btn">Download my CV</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- animatie iconite (momentan nu e animatia facuta cum trebuie) -->
-    <!-- <div class="moving-icons">
-        <div class="scrolling-wrapper">
-            <div class="scrolling-content">
-                <img src="https://img.shields.io/badge/C-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white" alt="C">
-                <img src="https://img.shields.io/badge/C++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++">
-                <img src="https://img.shields.io/badge/C%23-%23239120.svg?style=for-the-badge&logo=csharp&logoColor=white" alt="C#">
-                <img src="https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white" alt=".NET">
-                <img src="https://img.shields.io/badge/Java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java">
-                <img src="https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" alt="Python">
-                <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" alt="JavaScript">
-                <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
-                <img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
-                <img src="https://img.shields.io/badge/Oracle SQL-F80000?style=for-the-badge&logo=oracle&logoColor=white" alt="Oracle SQL">
-                <img src="https://img.shields.io/badge/pl/sql-F80000?style=for-the-badge&logo=oracle&logoColor=white" alt="Oracle PL/SQL">
-                <img src="https://img.shields.io/badge/sqlite-0000FF.svg?style=for-the-badge&logo=sqlite&logoColor=white" alt="SQLite">
-                <img src="https://img.shields.io/badge/Postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white" alt="Postgres">
-                <img src="https://img.shields.io/badge/Git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white" alt="Git">
-                <img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
-                <img src="https://img.shields.io/badge/Linux-ff004f.svg?style=for-the-badge&logo=linux&logoColor=white" alt="Linux">
-            </div>
-        </div>
-    </div> -->
-
-</div>
-
-
-
-<!-- ------------------------- My projects section ------------------------- -->
-<div id="projects">
-    <div class="container">
-        <h1 class="sub-title">My Projects</h1>
-        <div class="projects-list">
-            <div>
-                <i class="fa-solid fa-code"></i>
-                <h2>SQLite Engine in C++</h2>
-                <p>A lightweight, limited version of the SQLite database engine implemented in C++. 
-                    Currently under development, this project demonstrates core database management concepts 
-                    such as query parsing, execution, and storage handling.</p>
-                    <a href="https://github.com/Lipiu/My-SQLite-Engine">Learn more</a>
-            </div>
-
-            <div>
-                <i class="fa-solid fa-pizza-slice"></i>
-                <h2>Pizza delivery form app</h2>
-                <p>Developed a C# Windows Forms application that lets users select, customize, and order pizzas through an intuitive interface. 
-                    Features include JSON and XML serialization and SQLite database integration.</p>
-                    <a href="https://github.com/Lipiu/PizzaDeliveryApp">Learn more</a>
-            </div>
-
-            <div>
-                <i class="fa-solid fa-dumbbell"></i>
-                <h2>Gym management system</h2>
-                <p>A gym management system designed with Oracle PL/SQL, featuring database-driven solutions for handling 
-                    member information, subscriptions, and activity tracking through efficient queries, stored procedures, and triggers.</p>
-                    <a href="https://github.com/Lipiu/gym-database-system">Learn more</a>
-            </div>
-
-            <div>
-                <i class="fa-solid fa-book"></i>
-                <h2>Book store ETL pipeline</h2>
-                <p>Developed an ETL pipeline for a bookstore during my internship at SoftServe, using Python, Git, and pgAdmin 4. 
-                    It extracts data from CSVs, validates it through a raw-staging-trusted workflow, and transforms it for analysis.</p>
-                    <a href="https://github.com/Lipiu/proiect-practica">Learn more</a>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- ------------------------- Contact section ------------------------- -->
-<div id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="contact-info">
-                <h1 class="sub-title-contact">Contact me</h1>
-                <p> <i class="fa-solid fa-envelope"></i> rosu.liviumihai@gmail.com</p>
-                <p> <i class="fa-solid fa-phone"></i> +40767691019</p>
-                <div class="social-icons">
-                    <a href="https://www.linkedin.com/in/liviu-mihai-rosu/"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://github.com/Lipiu"><i class="fa-brands fa-github"></i></a>
-                </div>
-                <a href="cv.pdf" download class="btn">Download my CV</a>
-            </div>
-        </div>
-    </div>
-</div>
-
-<script src="main.js"></script>
+    <!-- ========================= SCRIPTS ========================= -->
+    <script src="main.js"></script>
 
 </body>
 </html>

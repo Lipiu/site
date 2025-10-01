@@ -1,0 +1,32 @@
+.switches{
+    text-align: center;
+}
+
+.dark-mode{
+    background-color: #000;
+    color: #fff;
+}
+
+.toggle-switches{
+    cursor: pointer;
+}
+
+.sun-icon, .moon-icon{
+    width: 24px;
+    height: 24px;
+    transition: opacity 0.3s;
+}
+
+/* hide by default (light mode) */
+.moon-icon{
+    display: none;
+}
+
+/* show moon icon and hide sun icon in dark mode */
+.dark-mode .sun-icon{
+    display: none;
+}
+
+.dark-mode .moon-icon{
+    display: inline-block;
+}

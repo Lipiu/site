@@ -6,10 +6,10 @@ themeSwitchToggle.addEventListener('click', () => {
 
     //save user preference
     if(body.classList.contains('dark-mode')){
-        localStorage.getItem('theme', 'dark-mode');
+        localStorage.setItem('theme', 'dark-mode');
     }
     else{
-        localStorage.getItem('theme', '');
+        localStorage.setItem('theme', '');
     }
 });
 

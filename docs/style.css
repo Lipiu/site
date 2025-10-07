@@ -21,6 +21,14 @@ body{
     cursor: default;
 }
 
+.sun-icon{
+    display: none;
+}
+
+.moon-icon{
+    display: inline-block;
+}
+
 .sun-icon, .moon-icon{
     cursor: pointer;
     width: 24px;
@@ -28,18 +36,13 @@ body{
     transition: opacity 0.3s;
 }
 
-/* hide by default (light mode) */
-.moon-icon{
-    display: none;
-}
-
 /* show moon icon and hide sun icon in dark mode */
 .dark-mode .sun-icon{
-    display: none;
+    display: inline-block;
 }
 
 .dark-mode .moon-icon{
-    display: inline-block;
+    display: none;
 }
 
 /*----------------*/
@@ -84,3 +87,25 @@ body{
 
 /* ----------------- */
 
+.nav-buttons {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-btn {
+    background: none;
+    border: none;
+    color: inherit;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+.nav-btn:hover {
+    color: red;
+    text-decoration: underline;
+}

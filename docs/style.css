@@ -62,6 +62,15 @@ body{
     margin-top: 20px;
 }
 
+.social-icons a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.social-icons a:visited{
+    color: inherit;
+}
+
 .social-icons i{
     font-size: 25px;
     transition: transform 0.1s, color 0.2s;

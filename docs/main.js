@@ -1,17 +1,19 @@
-const themeSwitchToggle = document.getElementById('themeSwitchToggle');
+const sunIcon = document.querySelector('.sun-icon');
+const moonIcon = document.querySelector('.moon-icon');
 const body = document.body;
 
-themeSwitchToggle.addEventListener('click', () => {
+function toggleTheme() {
     body.classList.toggle('dark-mode');
 
-    //save user preference
     if(body.classList.contains('dark-mode')){
         localStorage.setItem('theme', 'dark-mode');
-    }
-    else{
+    } else {
         localStorage.setItem('theme', '');
     }
-});
+}
+
+sunIcon.addEventListener('click', toggleTheme);
+moonIcon.addEventListener('click', toggleTheme);
 
 const currentTheme = localStorage.getItem('theme');
 if(currentTheme){

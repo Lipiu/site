@@ -1,15 +1,8 @@
-body{
-    position: relative;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    justify-content: center;
-    align-items: center;
+body {
+    display: flex;
+    flex-direction: column;
     height: 100vh;
     margin: 0;
-}
-
-.switches{
-    text-align: center;
 }
 
 .dark-mode{
@@ -17,9 +10,21 @@ body{
     color: #fff;
 }
 
-.toggle-switches{
-    cursor: default;
+.top-bar {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    padding: 10px 20px;
 }
+
+.toggle-switches {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
 
 .sun-icon{
     display: none;
@@ -36,7 +41,6 @@ body{
     transition: opacity 0.3s;
 }
 
-/* show moon icon and hide sun icon in dark mode */
 .dark-mode .sun-icon{
     display: inline-block;
 }
@@ -46,10 +50,16 @@ body{
 }
 
 /*----------------*/
-.profile{
+.profile {
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
+    
+    justify-content: flex-start;
+    margin-top: 200px;
+   
+    /*justify-content: center;*/
     text-align: center;
 }
 
@@ -86,11 +96,7 @@ body{
 }
 
 /* ----------------- */
-
 .nav-buttons {
-    position: fixed;
-    top: 20px;
-    left: 20px;
     display: flex;
     gap: 15px;
 }
@@ -106,6 +112,19 @@ body{
 }
 
 .nav-btn:hover {
-    color: red;
+    color: cyan;
     text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .nav-buttons {
+        position: static;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    body {
+        padding-left: 0;
+        padding-top: 0;
+    }
 }

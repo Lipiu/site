@@ -18,10 +18,11 @@ body{
 }
 
 .toggle-switches{
-    cursor: pointer;
+    cursor: default;
 }
 
 .sun-icon, .moon-icon{
+    cursor: pointer;
     width: 24px;
     height: 24px;
     transition: opacity 0.3s;

@@ -33,6 +33,12 @@ body {
     width: 24px;
     height: 24px;
     transition: opacity 0.3s;
+    transition: transform 0.2s ease, opacity 0.3s;
+}
+
+.sun-icon:hover,
+.moon-icon:hover{
+    transform: scale(1.2);
 }
 
 .sun-icon {

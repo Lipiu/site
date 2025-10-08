@@ -41,10 +41,11 @@ document.addEventListener("DOMContentLoaded", () => {
         "Personal Projects": `
             <h3>Personal Projects</h3>
             <ul>
-            <li><a href="https://github.com/Lipiu/My-SQLite-Engine" target="_blank"><strong>SQLite engine</strong> in C++</a></li>
-            <li><a href="https://github.com/Lipiu/PizzaDeliveryApp" target="_blank"><strong>Pizza delivery form app</strong> in C#</a></li>
-            <li><a href="https://github.com/Lipiu/gym-database-system" target="_blank"><strong>Gym management system</strong> using SQL</a></li>
-            <li><a href="https://github.com/Lipiu/proiect-practica" target="_blank"><strong>Fictional book store ETL pipeline</strong> using Python and PostgreSQL</a></li>
+            <li><a href="https://github.com/Lipiu/My-SQLite-Engine" target="_blank"><strong>SQLite engine</strong> - C++</a></li>
+            <li><a href="https://github.com/Lipiu/password-generator" target="_blank"><strong>Password Generator</strong> - C</a></li>
+            <li><a href="https://github.com/Lipiu/PizzaDeliveryApp" target="_blank"><strong>Pizza Delivery Form App</strong> - C#</a></li>
+            <li><a href="https://github.com/Lipiu/gym-database-system" target="_blank"><strong>Gym Management System</strong> - SQL</a></li>
+            <li><a href="https://github.com/Lipiu/proiect-practica" target="_blank"><strong>Fictional Book Store ETL Pipeline</strong> - Python + PostgreSQL</a></li>
             </ul>
             `
         };

@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Close popup when clicking outside
     window.addEventListener("click", function(e) {
-        if (!popup.contains(e.target) && !e.target.classList.contains("nav-btn")) {
+        if (!popup.contains(e.target) && !e.target.closest(".nav-btn")) {
             popup.style.display = "none";
         }
     });

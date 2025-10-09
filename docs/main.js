@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             // Position the popup just below the button
             popup.style.left = (rect.left + scrollLeft) + "px";
-            popup.style.top = (rect.bottom + scrollTop + 5) + "px";
+            popup.style.top = (rect.bottom + scrollTop + 12) + "px";
             popup.style.display = "block";
         });
     });

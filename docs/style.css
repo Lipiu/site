@@ -73,11 +73,29 @@ body {
     cursor: pointer;
     padding: 5px 10px;
     transition: color 0.3s ease;
+    overflow: hidden;
 }
 
-.nav-btn:hover {
-    color: cyan;
-    text-decoration: underline;
+.nav-btn span{
+    position: relative;
+    display: inline-block;
+}
+
+.nav-btn span::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: cyan;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.nav-btn:hover span::after {
+    transform: scaleX(1);
 }
 
 /* Profile Section */

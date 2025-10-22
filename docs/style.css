@@ -156,6 +156,19 @@ body {
     transition: opacity 0.2s ease;
 }
 
+.info-popup ul li {
+    white-space: nowrap;
+}
+
+.info-popup ul {
+    width: max-content;
+}
+
+.info-popup {
+    width: max-content;
+    max-width: none;
+}
+
 .dark-mode .info-popup {
     background-color: #222;
     color: #fff;

@@ -46,6 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <li><a href="https://github.com/Lipiu/PizzaDeliveryApp" target="_blank"><strong>Pizza Delivery Form App</strong> - C#</a></li>
             <li><a href="https://github.com/Lipiu/gym-database-system" target="_blank"><strong>Gym Management System</strong> - SQL</a></li>
             <li><a href="https://github.com/Lipiu/proiect-practica" target="_blank"><strong>Fictional Book Store ETL Pipeline</strong> - Python + PostgreSQL</a></li>
+            <li><a href="https://github.com/Lipiu/Solar-System" traget="_blank"><strong> Animated Solar System</strong> - JavaScript + HTML + CSS </a></li>
             </ul>
             `
         };

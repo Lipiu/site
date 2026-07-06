@@ -3,57 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Liviu-Mihai Roșu — Computer science student portfolio">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
-    <title>My Website</title>
-    
+    <title>Liviu-Mihai Roșu | Portfolio</title>
 </head>
 <body>
-    <div class="top-bar">
-        <div class="nav-buttons">
-            <button class="nav-btn"><span>About me</span></button>
-            <button class="nav-btn"><span>Experience</span></button>
-            <button class="nav-btn"><span>Personal Projects</span></button>
-        </div>
+    <div class="terminal">
+        <header class="terminal-titlebar">
+            <div class="terminal-dots" aria-hidden="true">
+                <span class="dot dot--red"></span>
+                <span class="dot dot--yellow"></span>
+                <span class="dot dot--green"></span>
+            </div>
+            <span class="terminal-title">liviu@portfolio: ~</span>
 
-        <div class="toggle-switches" id="themeSwitchToggle">
-            <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="5"></circle>
-                <line x1="12" y1="1" x2="12" y2="3"></line>
-                <line x1="12" y1="21" x2="12" y2="23"></line>
-                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                <line x1="1" y1="12" x2="3" y2="12"></line>
-                <line x1="21" y1="12" x2="23" y2="12"></line>
-                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-            </svg>
+            <div class="toggle-switches" id="theme-toggle" role="button" tabindex="0" aria-label="Toggle light mode">
+                <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+                <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </div>
+        </header>
 
-            <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-            </svg>
-        </div>
+        <nav class="nav-buttons" aria-label="Primary">
+            <button type="button" class="nav-btn" data-section="about"><span class="prompt-symbol">$</span> about</button>
+            <button type="button" class="nav-btn" data-section="experience"><span class="prompt-symbol">$</span> experience</button>
+            <button type="button" class="nav-btn" data-section="projects"><span class="prompt-symbol">$</span> projects</button>
+        </nav>
+
+        <main class="terminal-body">
+            <div class="command-line">
+                <span class="prompt">admin@liviu:~$</span>
+                <span class="command">whoami</span>
+            </div>
+            <p class="output output--hero">
+                <span id="hero-text">Hi, I am Liviu</span><span class="cursor" aria-hidden="true">_</span>
+            </p>
+
+            <div class="command-line">
+                <span class="prompt">admin@liviu:~$</span>
+                <span class="command">cat role.txt</span>
+            </div>
+            <p class="output">Computer science student.</p>
+
+            <div class="command-line">
+                <span class="prompt">admin@liviu:~$</span>
+                <span class="command">ls contacts/</span>
+            </div>
+            <div class="social-icons output">
+                <a href="https://github.com/Lipiu" target="_blank" rel="noopener noreferrer" title="My GitHub"><i class="fab fa-github" aria-hidden="true"></i><span>github</span></a>
+                <a href="https://www.linkedin.com/in/liviu-mihai-rosu/" target="_blank" rel="noopener noreferrer" title="My LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i><span>linkedin</span></a>
+                <a href="mailto:rosu.liviumihai@gmail.com" title="Send me an email!"><i class="fas fa-envelope" aria-hidden="true"></i><span>email</span></a>
+                <a href="../cv/Rosu Liviu Resume.pdf" download title="Download my CV!"><i class="fa-regular fa-file" aria-hidden="true"></i><span>resume.pdf</span></a>
+            </div>
+        </main>
     </div>
 
-
-    <div class="profile">
-        <div class="profile-text">
-            <h1>Hi, I am Liviu!</h1>
-            <span>Computer science student.</span>
-        </div>
-
-        <div class="social-icons">
-            <a href="https://github.com/Lipiu" target="_blank" title="My GitHub"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/liviu-mihai-rosu/" target="_blank" title="My LinkedIn"><i class="fab fa-linkedin"></i></a>
-            <a href="mailto:rosu.liviumihai@gmail.com" target="_blank" title="Send me an email!"><i class="fas fa-envelope"></i></a>
-            <a href="Resume Liviu-Mihai Roșu.pdf" download title="Download my CV!"><i class="fa-regular fa-file"></i></a>
-        </div>
-    </div>
-
-    <div id="info-popup" class="info-popup">
+    <div id="info-popup" class="info-popup" role="dialog" aria-modal="false">
         <div class="popup-content" id="popup-content"></div>
     </div>
 
-    <script src="main.js"></script>
+    <script src="main.js" defer></script>
 </body>
 </html>

@@ -62,12 +62,12 @@ function initNavPopups() {
         projects: `
             <h3>Personal Projects</h3>
             <ul>
-                <li><a href="https://github.com/Lipiu/Learn-With-eASE" target="_blank" rel="noopener noreferrer"><strong>Interactive E-Learning Platform</strong> - React + Spring Boot + PostgreSQL</a></li>
+                <li><a href="https://github.com/Lipiu/Learn-With-eASE" target="_blank" rel="noopener noreferrer"><strong>Interactive E-Learning Platform</strong> - React, Spring Boot, PostgreSQL</a></li>
+                <li><a href="https://github.com/Lipiu/expense-tracker" target="_blank" rel="noopener noreferrer"><strong>Expense Tracker</strong> - React, Spring Boot, PostgreSQL</a></li>
                 <li><a href="https://github.com/Lipiu/password-generator" target="_blank" rel="noopener noreferrer"><strong>Password Generator</strong> - C</a></li>
                 <li><a href="https://github.com/Lipiu/PizzaDeliveryApp" target="_blank" rel="noopener noreferrer"><strong>Pizza Delivery Form App</strong> - C#</a></li>
-                <li><a href="https://github.com/Lipiu/proiect-practica" target="_blank" rel="noopener noreferrer"><strong>Fictional Book Store ETL Pipeline</strong> - Python + PostgreSQL</a></li>
-                <li><a href="https://github.com/Lipiu/Solar-System" target="_blank" rel="noopener noreferrer"><strong>Animated Solar System</strong> - JavaScript + HTML + CSS</a></li>
-                <li><a href="https://github.com/Lipiu/gym-database-system" target="_blank" rel="noopener noreferrer"><strong>Gym Management System</strong> - SQL</a></li>
+                <li><a href="https://github.com/Lipiu/proiect-practica" target="_blank" rel="noopener noreferrer"><strong>Fictional Book Store ETL Pipeline</strong> - Python, PostgreSQL</a></li>
+                <li><a href="https://github.com/Lipiu/Solar-System" target="_blank" rel="noopener noreferrer"><strong>Animated Solar System</strong> - JavaScript, HTML, CSS</a></li>
             </ul>
         `,
     };

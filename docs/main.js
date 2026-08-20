@@ -51,7 +51,7 @@ function initNavPopups() {
     const sectionContent = {
         about: `
             <h3>About Me</h3>
-            <p>I’m a 3rd year Computer Science student at ASE, CSIE.</p>
+            <p>I graduated CSIE @ASE with a Bachelor's Degree in Economic Informatics.</p>
         `,
         experience: `
             <h3>Experience</h3>
